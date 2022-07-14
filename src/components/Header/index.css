@@ -1,0 +1,75 @@
+.HeaderContainer {
+  background-color: #272727;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+}
+
+.headerRouteLinks {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.headerLogoutButton {
+  background-color: #4f46e5;
+  color: #ffffff;
+  border-style: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.headerLogoutButton:hover {
+  cursor: pointer;
+}
+
+.headerIcons {
+  color: #ffffff;
+  font-size: 28px;
+}
+
+.logoutIcon:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .HeaderContainer {
+    justify-content: space-between;
+    padding: 10px 35px;
+  }
+  .HeaderContainerBrandImage {
+    width: 170px;
+  }
+  .headerLinksContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 130px;
+  }
+  li {
+    list-style: none;
+  }
+  .HeaderIconsContainer {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .headerLinksContainer,
+  .headerLogoutButton {
+    display: none;
+  }
+  .HeaderContainer {
+    justify-content: space-between;
+    padding: 5px 20px;
+  }
+  .HeaderContainerBrandImage {
+    width: 120px;
+  }
+  .HeaderIconsContainer {
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

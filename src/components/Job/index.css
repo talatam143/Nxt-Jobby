@@ -1,0 +1,244 @@
+.eachContainer {
+  background-color: #000000;
+  min-height: 100vh;
+  height: fit-content;
+  color: #ffffff;
+  padding-bottom: 10px;
+}
+
+.eachJobBrandContainer,
+.eachJobRatingContainer,
+.eachJobItemDetailsContainer,
+.eachJobItemLocationTypeContainer,
+.eachJobDescriptionContainer,
+.eachJobListItem,
+.eachJobLifeAtCompanyContainer,
+.similarJobCompanyContainer,
+.similarRatingContainer,
+.similarLocationContainer,
+.similarSubLocationContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.eachJobItemDetailsContainer,
+.eachJobDescriptionContainer {
+  justify-content: space-between;
+}
+
+.eachJobAnchorTag {
+  text-decoration: none;
+  color: #4f46e5;
+  font-size: 1.3rem;
+}
+
+.eachJobItemDetailsIcons {
+  margin-right: 10px;
+}
+
+.eachJobSubHeadings {
+  margin-top: 40px;
+}
+
+.eachJobListItem {
+  list-style: none;
+}
+
+.eachJobSkillContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.eachJobLifeAtCompanyImage {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.similarTitle {
+  font-size: 26px;
+}
+
+.eachJobLoader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.similarJobContainer {
+  list-style: none;
+}
+
+@media (max-width: 768px) {
+  .eachJobDetailsContainer {
+    background-color: #202020;
+    margin: 30px 20px 10px 20px;
+    border-radius: 10px;
+    padding: 40px 30px;
+  }
+  .eachJobCompanyLogo {
+    width: 90px;
+    margin-right: 15px;
+  }
+  .eachJobRatingContainer {
+    font-size: 20px;
+  }
+  .eachJobRatingStar,
+  .similarJobRatingStar {
+    color: #fbbf24;
+    margin-right: 5px;
+  }
+  .eachJobCompanyTitle {
+    font-size: 30px;
+  }
+  .eachJobTitleContainer {
+    line-height: 0.7;
+  }
+  .eachJobItemLocationTypeContainer {
+    font-size: 17px;
+  }
+  .eachJobAnchorTag {
+    font-size: 1.2rem;
+  }
+
+  .eachJobSkillContainer {
+    justify-content: space-around;
+  }
+
+  .eachJobListItem {
+    width: 40%;
+    margin-bottom: 40px;
+  }
+  .eachJobSkillsImage {
+    margin-right: 10px;
+    width: 50px;
+  }
+  .eachJobLifeAtCompanyContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .eachJobLifeAtCompanyImage {
+    margin-top: 10px;
+  }
+  .eachJobHeadingTwo {
+    margin: 30px 20px 10px 20px;
+  }
+  .similarJobContainer {
+    background-color: #202020;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 15px;
+  }
+  .eachJobSimilarJobsContainer {
+    margin: 15px 15px 10px 15px;
+  }
+  .similarCompanyLogo {
+    width: 70px;
+    margin-right: 10px;
+  }
+  .similarCompanyBrand {
+    line-height: 0.5;
+  }
+  .similarTitle {
+    font-size: 24px;
+  }
+
+  .similarRatingContainer {
+    font-size: 18px;
+  }
+  .similarSubLocationContainer {
+    font-size: 18px;
+    margin-right: 30px;
+  }
+  .similarIcons {
+    margin-right: 5px;
+  }
+}
+
+@media (min-width: 768px) {
+  .eachJobDetailsContainer {
+    background-color: #202020;
+    margin: 40px 60px 40px 60px;
+    border-radius: 20px;
+    padding: 70px 50px;
+  }
+
+  .eachJobCompanyLogo {
+    width: 110px;
+    margin-right: 25px;
+  }
+  .eachJobRatingContainer {
+    font-size: 24px;
+  }
+  .eachJobRatingStar,
+  .similarJobRatingStar {
+    color: #fbbf24;
+    margin-right: 10px;
+  }
+
+  .eachJobItemLocationTypeContainer {
+    font-size: 18px;
+  }
+
+  .eachJobListItem {
+    width: 30%;
+    margin-bottom: 40px;
+  }
+  .eachJobSkillsImage {
+    margin-right: 20px;
+    width: 70px;
+  }
+  .eachJobLifeAtCompanyImage {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .eachJobLifeAtCompanyPara {
+    align-self: flex-start;
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+  .eachJobSimilarJobsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 50px 30px 10px;
+  }
+  .similarJobContainer {
+    background-color: #202020;
+    margin: 10px;
+    width: 35%;
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  .similarCompanyLogo {
+    width: 90px;
+  }
+
+  .similarCompanyBrand {
+    line-height: 0.5;
+  }
+
+  .similarRatingContainer {
+    font-size: 20px;
+  }
+
+  .similarSubLocationContainer {
+    font-size: 18px;
+    margin-right: 30px;
+  }
+
+  .similarIcons {
+    margin-right: 10px;
+  }
+
+  .similarCompanyBrand {
+    margin-left: 20px;
+  }
+  .eachJobHeadingTwo {
+    margin: 0 50px 20px 50px;
+  }
+}

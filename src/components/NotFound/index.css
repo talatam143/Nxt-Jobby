@@ -1,0 +1,19 @@
+.pageNotFoundContainer {
+  background-color: #000000;
+  height: 100vh;
+  color: #ffffff;
+}
+
+.notFoundImageContainer {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 786px) {
+  .notFoundImage {
+    width: 400px;
+  }
+}

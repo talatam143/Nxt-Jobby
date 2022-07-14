@@ -1,0 +1,160 @@
+.JobPortalMainContainer {
+  background-color: #000000;
+  min-height: 100vh;
+  height: fit-content;
+  color: #ffffff;
+}
+
+.jobPortalBgSearchContainer,
+.jobPortalSmSearchContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.jobPortalSearchInput {
+  background-color: transparent;
+  height: 40px;
+  width: 400px;
+  border-width: 1px 0 1px 1px;
+  border-color: #ffffff;
+  border-radius: 5px 0 0 5px;
+  padding-left: 10px;
+  color: #ffffff;
+  font-size: 1.1rem;
+}
+
+.jobPortalSearchButton {
+  height: 40px;
+  width: 60px;
+  border-width: 1px 1px 1px 0;
+  border-color: #ffffff;
+  background-color: #272727;
+  color: #ffffff;
+  font-size: 1.2rem;
+  border-radius: 0 5px 5px 0;
+}
+
+.jobPortalProfileContainer {
+  background-image: url(https://assets.ccbp.in/frontend/react-js/profile-bg.png);
+  background-size: cover;
+  padding: 20px;
+  border-radius: 25px;
+  min-width: fit-content;
+}
+
+.jobPortalProfileName {
+  color: #4f46e5;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.jobPortalProfilePara {
+  color: #64748b;
+  font-weight: 500;
+}
+
+.jobPortalProfileFailureContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.jobPortalProfileRetryButton {
+  background-color: #4f46e5;
+  color: #ffffff;
+  border-style: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.jobPortalLine {
+  margin: 30px 0;
+}
+
+.jobPortalJobsContainerLoader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.jobPortalFetchingErrorContainer,
+.jobPortalNoJobsErrorContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  height: fit-content;
+}
+
+.jobPortalFiltersHeading {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 786px) {
+  .jobPortalBgSearchContainer {
+    display: none;
+  }
+  .jobPortalSmSearchContainer,
+  .jobPortalFiltersContainer {
+    margin: 20px;
+  }
+
+  .jobPortalSearchInput {
+    width: 100vw;
+  }
+  .jobPortalJobsContainer {
+    margin: 10px 20px;
+  }
+  .jobPortalFetchingErrorContainer {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .jobPortalFetchErrorImage {
+    width: 400px;
+  }
+}
+
+@media (min-width: 768px) {
+  .jobPortalFetchingErrorContainer {
+    width: 100vw;
+  }
+
+  .jobPortalFetchErrorImage {
+    width: 400px;
+  }
+
+  .jobPortalJobsContainerLoader {
+    height: 80vh;
+    width: 60vw;
+  }
+
+  .jobPortalProfileRetryButton:hover {
+    cursor: pointer;
+  }
+
+  .jobPortalBodyContainer {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .jobPortalFiltersContainer {
+    width: 25vw;
+    padding: 30px 20px 10px 20px;
+  }
+
+  .jobPortalJobsContainer {
+    width: 75vw;
+    padding: 30px 0 0 0;
+  }
+
+  .jobPortalSearchButton:hover {
+    cursor: pointer;
+  }
+
+  .jobPortalSmSearchContainer {
+    display: none;
+  }
+}
